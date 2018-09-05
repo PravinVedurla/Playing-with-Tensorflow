@@ -1,0 +1,39 @@
+creating a feat_col obj with featureColumn dtype to feed to 
+-- estimator obj
+
+creating an estimator obj
+
+x_data with linear trend
+
+giving our true m and b value
+
+generating y_true (y = mx + b)
+
+genetating some noise(len(x_data)) and adding it to y_true
+-- to break the extreme linearity and eradicating the obvious
+
+making DataFrames of X_data and Y_true
+
+making a legit Dataset from concating the DFs
+
+defining a batch_size and Batch_Amount
+
+declaring variables m,b and Placeholders for x and y
+
+y_mod = mx +b
+
+error = reduce((y_mod - y)^2)
+
+defining optimizer as gradient decent wth learning rate 0.001
+
+train = optimizer(error)
+
+
+sess.run(train, feed_dict)
+-- take in final m and b values
+
+predicting off the mod_m, mod_b and comparing with given m and b
+
+y2 = mod_m*x_data + mod_b
+
+plot y2 over a scatter of x_data
